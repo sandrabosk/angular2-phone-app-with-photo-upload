@@ -1,0 +1,17 @@
+<h2>Add A New Phone To The Inventory</h2>
+
+<form (ngSubmit)="createNewPhone(myForm)" #myForm="ngForm">
+      <p>  Brand
+        <input type="text" name="brand" [(ngModel)]="brand" required />
+      </p>
+      <p> Model Name
+        <input type="text" name="name" [(ngModel)]="name" required />
+      </p>
+      <p> specs, separated by commas.
+        <input type="text" name="specs" [(ngModel)]="specs" required />
+      </p>
+      <p> Image
+        <input type="text" name="image" [(ngModel)]="image" required />
+      </p>
+      <button type="submit"> Submit </button>
+    </form>

@@ -1,0 +1,16 @@
+.phone-list div {
+  height: 300px;
+  margin: 30px;
+  float: left;
+}
+
+.phone-list img {
+  height: 100%;
+}
+
+.error {
+  background-color: red;
+  color: white;
+  padding: 15px;
+  border-radius: 3px;
+}

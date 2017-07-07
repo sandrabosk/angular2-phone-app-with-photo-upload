@@ -1,0 +1,31 @@
+<h2> Phone Details </h2>
+
+<div class="error" *ngIf="errorMessage"> {{ errorMessage }} </div>
+
+<a routerLink="/"> Back to list </a>
+
+<div *ngIf="phone">
+  <div class="phone-thumbnail">
+    <img height="300" [src]="phone.image">
+  </div>
+
+  <div class="phone-info">
+    <h3> {{ phone.name }} </h3>
+
+    <h4> {{ phone.brand }} </h4>
+
+    <div *ngIf="phone.specs.length > 0">
+      <h4> Features </h4>
+      <ul>
+        <li *ngFor="let oneSpec of phone.specs">
+          {{ oneSpec }}
+        </li>
+      </ul>
+    </div>
+
+    <h4> Danger! </h4>
+    <button (click)="deletePhone()">
+      Delete This Phone
+    </button>
+  </div>
+</div>
