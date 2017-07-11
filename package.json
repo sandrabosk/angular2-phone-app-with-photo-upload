@@ -24,9 +24,12 @@
     "common-tags": "^1.4.0",
     "core-js": "^2.4.1",
     "ember-cli-string-utils": "^1.1.0",
+    "get-caller-file": "^1.0.2",
     "json-schema": "https://github.com/kriszyp/json-schema/tarball/master",
+    "ng2-file-upload": "^1.2.1",
     "nopt": "^4.0.1",
     "rxjs": "^5.1.0",
+    "silent-error": "^1.1.0",
     "zone.js": "^0.7.6"
   },
   "devDependencies": {

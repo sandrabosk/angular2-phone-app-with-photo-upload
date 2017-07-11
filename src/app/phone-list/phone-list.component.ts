@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { PhoneService } from '../phone.service';
 
+
 @Component({
   selector: 'app-phone-list',
   templateUrl: './phone-list.component.html',
@@ -9,7 +10,7 @@ import { PhoneService } from '../phone.service';
 })
 export class PhoneListComponent implements OnInit {
 
-  phones: Array<Object> = [];
+  phones = [];
   errorMessage: string = '';
 
   constructor(private myPhoneService: PhoneService) { }
@@ -22,6 +23,18 @@ export class PhoneListComponent implements OnInit {
       .catch((err) => {
         this.errorMessage = 'There was an error. Try again later.';
       });
+      // .then(()=> {
+      //   this.phones.forEach((phone)=>{
+      //     console.log(phone.image);
+      //     if(phone.image.indexOf("http")!==0){
+      //
+      //       phone.image = "http://localhost:3000"+phone.image
+      //     }
+          // phone.image = this._DomSanitizater.bypassSecurityTrustUrl(phone.image);
+          // console.log(phone.image);
+          // console.log('');
+        // });
+      // });
   }
 
 }

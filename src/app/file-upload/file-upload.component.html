@@ -1,0 +1,21 @@
+<h1> Add a new phone </h1>
+<a [routerLink]="['']"> Back to list </a>
+
+<form>
+  <fieldset>
+    <legend> Phone info </legend>
+    <label> Brand* </label>
+    <input type="text" [(ngModel)]="newPhone.brand" name="brand" required />
+
+    <label> Name* </label>
+    <input type="text" [(ngModel)]="newPhone.name" name="name" required />
+
+
+
+    <input type="file" name="file" id="file"  />
+
+  </fieldset>
+  <button (click)="submit()"> submit </button>
+</form>
+
+<p> {{ feedback }} </p>

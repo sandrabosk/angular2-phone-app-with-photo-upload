@@ -21,7 +21,7 @@ export class NewPhoneComponent implements OnInit {
     private myRoute: ActivatedRoute,
     private myPhoneService: PhoneService,
     private myNavigator: Router
-  ) { }
+  ) { };
 
   ngOnInit() {
       this.myRoute.params
